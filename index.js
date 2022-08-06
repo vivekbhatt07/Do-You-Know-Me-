@@ -1,9 +1,10 @@
 var readlineSync = require("readline-sync");
+var chalk = require('chalk');
 var score = 0;
 
 var userName = readlineSync.question("Enter your name: ");
-console.log('Welcome ' + userName + " to " + "quiz");
-
+console.log(chalk.blue('Welcome, ' + userName + " to " + "'DO YOU KNOW VIVEK'"));
+console.log("-------------------------");
 function play(question, answer) {
   var userAnswer = readlineSync.question(question);
   if (userAnswer === answer) {
@@ -16,7 +17,7 @@ function play(question, answer) {
   console.log("-------------------------");
 }
 
-var qA = [{ question: "where do I live ?", answer: "rudrapur" },
+var qA = [{ question: "where do I live ? ", answer: "rudrapur" },
 { question: "My favorite outdoor game ? ", answer: "football" },
 { question: "My favorite indoor game ? ", answer: "chess" },
 { question: "My favorite mobile game ? ", answer: "bgmi" },
