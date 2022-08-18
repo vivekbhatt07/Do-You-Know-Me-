@@ -13,7 +13,7 @@ function play(question, answer) {
     console.log(chalk.greenBright("You are Right !"))
   } else {
     console.log(chalk.red("You are Wrong !"));
-        console.log(chalk.red("Correct Answer is: " + answer));
+    console.log(chalk.greenBright("Correct Answer is: " + answer));
   }
   console.log("Your score is: " + score);
   console.log(chalk.yellow("----------------------------------"));
